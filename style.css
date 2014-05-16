@@ -52,18 +52,36 @@ h3 {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 0.8em;
+	cursor: pointer;
 }
 
-#reagents .squareReagent.match img {
+#reagents .squareReagent span {
+    color: #e2c693;
+}
+
+#reagents .squareReagent.positive img,
+#reagents .squareReagent.negative img {
 	width: 30px;
 	height: 30px;
 	margin: 20px 5px;
 }
 
+#reagents .squareReagent.active {
+	border: 2px solid #DDD;
+	margin: 0px 2px;
+}
+
 #reagents span.effects {
 	display: inline-block;
-	font: 0.8em;
 	vertical-align: top;
+	padding-top: 15px;
+	max-width: 50px;
+    font: 0.8em;
+}
+
+#reagents span.effects span {
+	display: block;
+    font: 0.8em;
 }
 
 #reagents .squareReagent img,
@@ -73,23 +91,49 @@ h3 {
 	height: 50px;
 }
 
-#reagents div.match.in_potion {
-	background-color: #247;
-}
-
 #reagents div.in_potion span.effects { display: none; }
 
+#reagents div.disabled {
+	opacity: 0.8;
+	background-color: transparent;
+}
+#reagents div.disabled img {
+	opacity: 0.3;
+}
 
-.match.positive {
+#reagents div.disabled span {
+    color: #CCC;
+}
+
+#reagents .positive,
+#effects .in_potion.positive {
 	background-color: #363;
 }
 
-.match.negative {
+.in_potion,
+#effects .active {
+    background-color: #247;
+}
+
+#reagents .negative,
+#effects .in_potion.negative {
 	background-color: #633;
 }
 
-.match.positive.negative {
+#reagents .positive.negative {
 	background-color: #663;
+}
+
+#reagents button {
+	background-color: #332;
+	border: 1px solid #AB966F;
+	width: 100px;
+	margin: 0px;
+}
+
+#reagents button:hover {
+	background-color: $444;
+	color: #EEE;
 }
 
 /*
@@ -105,7 +149,7 @@ h3 {
 	float: left;
 }
 
-#selected, #selected div {
+#selected {
     height: 300px;
 }
 
@@ -142,7 +186,7 @@ h3 {
 
 #selected #potion .effect {
 	margin: 0.2em;
-	height: 1em;
+	min-height: 1em;
 	font-size: 1.8em;
 	font-weight: 500;
 }
@@ -158,17 +202,28 @@ h3 {
  */
 #effects {
 	width: 200px;
-	height: 600px;
+	height: 590px;
 	margin: 20px;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
     font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 10px;
 }
 
 #effects .effect {
 	font: 1.1em;
-	margin: 0.3em;
+	padding-top: 0.15em;
+	padding-bottom: 0.15em;
+	cursor: pointer;
+}
+
+#effects .possible {
+	background-color: #666;
+}
+
+#effects .effect.hover {
+	background-color: #444;
 }
 
 .effect.positive {
@@ -220,4 +275,10 @@ h3 {
 	margin-left: 50px;
 	margin-bottom: 2em;
 	font-size: 1.2em;
+}
+
+/* Bugfix for Luminous Russala */
+#rlr .name {
+	position: relative;
+	top: -1.2em;
 }

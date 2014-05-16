@@ -1,0 +1,17 @@
+==
+== ESO Alchemy Calculator
+==
+Created by @Sasky (Zaniira)
+
+----------USAGE---------------
+Unzip and open index.html
+
+Left side is reagents - hover to see effects, click to add to potion.
+Also can switch to 'Disable Mode' - lets you grey out ingredients you don't have.
+
+Right side is effects - click to outline all reagents that have that effect
+
+--------CHANGELOG-------------
+0.2 - Fixed some effects. Updated 2 as unknown. Changed text to better match ingame.
+
+0.1 - Initial code completion.
