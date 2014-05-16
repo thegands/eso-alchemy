@@ -1,0 +1,223 @@
+/*
+ * Swatches
+ * Gold #AB966F
+ * Green #2DC50E
+ */
+
+* {
+    color: #EEE;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+body {
+	background-color: #000;
+}
+
+div.main {
+	background-color: #555;
+}
+
+h1 {
+	color: #AB966F;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+h3 {
+	color: #2DC50E;
+	font-weight: 500;
+	font-variant: small-caps;
+	font-size: 1.8em;
+}
+
+/*
+ * Reagents Block
+ * Contains icons of each reagent
+ * Also has styles for hover, selected, useless
+ */
+#reagents {
+	width: 300px;
+	margin: 20px;
+	height: 600px;
+	display: inline-block;
+    float: left;
+}
+
+#reagents .squareReagent {
+	float: left;
+	width: 90px;
+	margin: 2px 4px;
+	height: 90px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0.8em;
+}
+
+#reagents .squareReagent.match img {
+	width: 30px;
+	height: 30px;
+	margin: 20px 5px;
+}
+
+#reagents span.effects {
+	display: inline-block;
+	font: 0.8em;
+	vertical-align: top;
+}
+
+#reagents .squareReagent img,
+#reagents .squareReagent.in_potion img {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+#reagents div.match.in_potion {
+	background-color: #247;
+}
+
+#reagents div.in_potion span.effects { display: none; }
+
+
+.match.positive {
+	background-color: #363;
+}
+
+.match.negative {
+	background-color: #633;
+}
+
+.match.positive.negative {
+	background-color: #663;
+}
+
+/*
+ * Current block
+ * Contains info on the current potion
+ */
+
+#current {
+	width: 600px;
+	margin: 20px;
+    height: 600px;
+	display: inline-block;
+	float: left;
+}
+
+#selected, #selected div {
+    height: 300px;
+}
+
+#selected #mixer {
+	width: 300px;
+	display: inline-block;
+    float: left;
+}
+
+#selected #mixer .reagent {
+	height: 70px;
+	margin-top: 25px;
+	margin-left: 40px;
+	vertical-align: middle;
+	color: #2DC50E;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+#selected #mixer .reagent img {
+	width: 50px;
+	height: 50px;
+	margin-right: 5px;
+    vertical-align: middle;
+}
+
+#selected #potion {
+	width: 290px;
+	margin-left: 5px;
+	display: inline-block;
+	float: left;
+}
+
+#selected #potion .effect {
+	margin: 0.2em;
+	height: 1em;
+	font-size: 1.8em;
+	font-weight: 500;
+}
+
+#selected #potion .effect.inactive {
+	color: #777;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+/*
+ * General effect formatting
+ */
+#effects {
+	width: 200px;
+	height: 600px;
+	margin: 20px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+#effects .effect {
+	font: 1.1em;
+	margin: 0.3em;
+}
+
+.effect.positive {
+	color: #AB966F;
+}
+
+.effect.negative {
+    color: #AB6F6F;
+}
+
+/*
+ * Detail
+ * Shows info for the hovered ingredient
+ */
+
+#detail {
+	margin-top: 40px;
+	height: 260px;
+}
+
+#lg_img {
+	width: 64px;
+	height: 100px;
+	display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+#lg_title {
+    display: inline-block;
+    margin: 20px;
+    width: 400px;
+    height: 100px;
+    vertical-align: middle;
+    color: #2DC50E;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 2.5em;
+    float: left;
+}
+
+#detail .effect {
+	display: inline-block;
+	width: 220px;
+	height: 1em;
+	color: #AB966F;
+	margin-left: 50px;
+	margin-bottom: 2em;
+	font-size: 1.2em;
+}

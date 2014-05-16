@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESO Alchemy Calculator</title>
+
+<!-- Google CDN items -->
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<!-- Main includes -->
+<link href="style.css" media="screen" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+<h1>ESO Alchemy Calculator</h1>
+<div class="main" id="reagents">&nbsp;</div>
+<div id="current">
+    <div class="main" id="selected">
+        <div id="mixer"></div>
+        <div id="potion"></div>
+    </div>
+    <div class="main" id="detail">
+        <div id="detail_hide">
+        <div id="lg_img">1</div>
+        <div id="lg_title">ING</div>
+        <br style="clear: left" />
+        <div class="effect" id="effect1">a</div>
+        <div class="effect" id="effect3">b</div>
+        <div class="effect" id="effect2">c</div>
+        <div class="effect" id="effect4">d</div>
+        </div>
+    </div>
+</div>
+<div class="main" id="effects"></div>
+<script type="text/javascript">
+$(loadData);
+</script>
+</body>
+</html>
