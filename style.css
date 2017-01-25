@@ -39,7 +39,7 @@ h3 {
 #reagents {
 	width: 300px;
 	margin: 20px;
-	height: 600px;
+	/*height: 600px;*/
 	display: inline-block;
     float: left;
 }
@@ -202,7 +202,7 @@ h3 {
  */
 #effects {
 	width: 200px;
-	height: 590px;
+	/*height: 590px;*/
 	margin: 20px;
 	display: inline-block;
 	text-align: center;
@@ -278,7 +278,7 @@ h3 {
 }
 
 /* Bugfix for Luminous Russala */
-#rlr .name {
+/*#rlr .name {
 	position: relative;
 	top: -1.2em;
-}
+}*/
