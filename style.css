@@ -93,7 +93,7 @@ h3 {
 
 #reagents div.in_potion span.effects { display: none; }
 
-#reagents div.disabled {
+#reagents div.squareReagent.disabled {
 	opacity: 0.8;
 	background-color: transparent;
 }
